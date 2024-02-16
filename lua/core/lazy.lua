@@ -27,7 +27,7 @@ lazy.setup({
     cache = { enabled = true },
     reset_packpath = true, -- reset the package path to improve startup time
     rtp = {
-      reset = true,      -- reset the runtime path to $VIMRUNTIME and your config directory
+      reset = true,        -- reset the runtime path to $VIMRUNTIME and your config directory
       disabled_plugins = {
         "gzip",
         "nvim",
