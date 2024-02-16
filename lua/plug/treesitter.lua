@@ -12,7 +12,7 @@ function TREESITTER.config()
 
 	treesitter.setup({
 		auto_install = true,
-		ensure_installed = { "bash", "lua", "vim", "python", "markdown", "markdown_inline" },
+		ensure_installed = { "lua", "markdown", "markdown_inline" },
 		sync_install = true,
 		highlight = {
 			enable = true,
