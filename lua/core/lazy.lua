@@ -18,7 +18,10 @@ if not lazy_ok then
 end
 
 lazy.setup({
-  spec = { { import = "plug" } },
+  spec = {
+    { import = "plug" },
+    { import = "markdown" },
+  },
   performance = {
     cache = { enabled = true },
     reset_packpath = true, -- reset the package path to improve startup time

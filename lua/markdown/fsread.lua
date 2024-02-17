@@ -1,5 +1,6 @@
 local FSREAD = {
   'nullchilly/fsread.nvim',
+	ft = "markdown",
   cmd = { "FSRead", "FSClear", "FSToggle" },
   keys = { "<C-r>", "<cmd>FSToggle<CR>" }
 }

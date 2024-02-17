@@ -51,3 +51,11 @@ map({ "i", "n" }, "<Left>", "<cmd>echo 'Use H VScode user!'<CR>", nrs)
 map({ "i", "n" }, "<Down>", "<cmd>echo 'Use J VScode user!'<CR>", nrs)
 map({ "i", "n" }, "<Up>", "<cmd>echo 'Use K VScode user!'<CR>", nrs)
 map({ "i", "n" }, "<Right>", "<cmd>echo 'Use L VScode user!'<CR>", nrs)
+
+-- Autopairs insert mode
+map("i", "'", "''<left>")
+map("i", "\"", "\"\"<left>")
+map("i", "(", "()<left>")
+map("i", "[", "[]<left>")
+map("i", "{", "{}<left>")
+map("i", "{;", "{};<left><left>")
