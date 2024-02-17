@@ -31,15 +31,4 @@ return {
       vim.keymap.set('n', "<leader>z", "<cmd>ZenMode<CR>", {})
     end
   },
-  {
-    'folke/twilight.nvim',
-    event = { "BufReadPost", "BufNewFile" },
-    config = function()
-      local status_ok, twilight = pcall(require, 'twilight')
-      if not status_ok then
-        return
-      end
-      twilight.setup({})
-    end
-  }
 }

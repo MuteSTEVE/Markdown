@@ -6,7 +6,6 @@ local CMP = {
     { "hrsh7th/cmp-path",             event = "InsertEnter" },
     { "hrsh7th/cmp-cmdline",          event = "InsertEnter" },
     { "hrsh7th/cmp-nvim-lsp",         event = "InsertEnter" },
-    { "hrsh7th/cmp-nvim-lua",         event = "InsertEnter" },
     { "saadparwaiz1/cmp_luasnip",     event = "InsertEnter" },
     { "L3MON4D3/LuaSnip",             event = "InsertEnter" },
     { "rafamadriz/friendly-snippets", event = "InsertEnter" },
@@ -77,7 +76,6 @@ function CMP.config()
   }
 
   local sources = {
-    { name = "nvim_lua" },
     { name = "luasnip" },
     { name = "nvim_lsp" },
     { name = "buffer" },
@@ -91,7 +89,6 @@ function CMP.config()
       vim_item.kind = string.format("%s", KI[vim_item.kind])
       -- vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
       vim_item.menu = ({
-        nvim_lua = "[VIM]",
         nvim_lsp = "[LSP]",
         luasnip = "[Snippet]",
         buffer = "[Buffer]",
@@ -106,10 +103,6 @@ function CMP.config()
       expand = function(args)
         luasnip.lsp_expand(args.body) -- For `luasnip` users.
       end,
-    },
-    window = {
-      completion = cmp.config.window.bordered(),
-      documentation = cmp.config.window.bordered(),
     },
     mapping = mappings,
     formatting = formattings,
