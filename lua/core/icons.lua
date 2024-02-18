@@ -49,6 +49,10 @@ return {
 		Variable = "󰀫",
 	},
 
+  lualine = {
+    vert = "▊",
+  },
+
 	neotree = {
 		default = "",
 		folder_closed = "",
