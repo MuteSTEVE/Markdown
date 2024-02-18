@@ -25,10 +25,7 @@ local file_name = "%f"
 local modified = "%m"
 local read_only = "%r"
 
-local file_type = "%{&filetype != '' ? &filetype .. '' : ''}"
-local file_encoding = "%{&fileencoding}"
-local file_format = "%{&fileformat}"
-local lc = "%l" .. ":" .. "%c"
+local location = "%l" .. ":" .. "%c"
 local percentage = "%p%%"
 
 vim.cmd("highlight background guibg=guibg guifg=black")
@@ -44,16 +41,8 @@ vim.opt.statusline = background
     .. spc
     .. read_only
     .. align_right
-    .. file_type
+    .. location
     .. spc
-    .. spc
-    .. file_encoding
-    .. spc
-    .. spc
-    .. file_format
-    .. spc
-    .. spc
-    .. lc
     .. spc
     .. percentage
     .. spc
