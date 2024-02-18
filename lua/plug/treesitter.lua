@@ -11,17 +11,7 @@ function TREESITTER.config()
 	end
 
 	treesitter.setup({
-		auto_install = true,
 		ensure_installed = { "lua", "markdown", "markdown_inline" },
-		sync_install = true,
-		highlight = {
-			enable = true,
-			additional_vim_regex_highlighting = false,
-		},
-		indent = {
-			enable = true,
-			disable = { "python", "css" },
-		},
 	})
 end
 
