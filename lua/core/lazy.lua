@@ -21,6 +21,7 @@ lazy.setup({
   spec = {
     { import = "plug" },
     { import = "markdown" },
+    { import = "ui" },
   },
   performance = {
     cache = { enabled = true },

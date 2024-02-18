@@ -33,7 +33,7 @@ function NOICE.config()
 			format = {
 				cmdline = { icon = NI.cmdline },
 				filter = { icon = NI.filter },
-				help = { icon = NI.filter },
+				help = { icon = NI.help },
 				lua = { icon = NI.lua },
 				search_down = { icon = NI.search },
 				search_up = { icon = NI.search },
